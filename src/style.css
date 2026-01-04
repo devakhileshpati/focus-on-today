@@ -1,0 +1,151 @@
+.flexContainer{
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color:#48A30012; */
+    background-color:black;
+    font-family:'Poppins', 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+
+.focusOnToday{
+    color:#61481C;
+    width: 511px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+.focusOn{
+    color: #48A300;
+}
+
+
+.dashboard{
+    width: 660px;
+    height: 810px;
+    background-color: #FBFBFB;
+    border-radius: 2%;
+    border:1px solid red;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dashboard .todayHeading{
+    align-self: flex-start;
+    color:#000000;
+    align-items: center;
+    margin-left:40px;
+    margin-top: 10px;
+
+}
+
+.dashboard .todayHeading .todayH2{
+width: 125px;
+height: 30px;
+}
+
+.todayHeading .sunIcon{
+    height: 50px;
+    width: 50px;
+    margin-left: -1.5rem;
+}
+
+.topOneLiner{
+font-weight: 400;
+font-size: 0.9rem;
+margin: 3rem 0 1rem -280px;
+}
+
+.progressBar{
+    width: 574px;
+    height: 30px;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius: 25px;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.goal{
+    width: 570px;
+    height: 82px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 3rem;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.goal .circle{
+height: 24px;
+width: 24px;
+border: 1px solid rgba(0, 0, 0, 0.39);
+border-radius: 50%;
+position: absolute;
+top: 50%;
+transform: translate(50%, -50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.goal .goalText{
+    height: 28px;
+    width: 364px;
+    font-size: 1rem;
+    position: absolute;
+    top:34%;
+    left:8%;
+}
+
+.goal .goalText{
+    border: none;
+}
+
+.goal .goalText::placeholder{
+    opacity: 0.5;
+}
+
+
+.goal .goalText:-webkit-autofill,
+.goal .goalText:-webkit-autofill:hover, 
+.goal .goalText:-webkit-autofill:focus, 
+.goal .goalText:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+.goal .goalText:focus{
+    outline-width: 0;
+}
+
+.progressBarColor{
+background-color: rgba(72, 163, 0, 1);
+border-radius: inherit;
+height: 100%;
+/* width: 192px; */
+}
+
+
+.alertForPleaseSetAllGoals{
+    position: absolute;
+    top:12rem;
+    left:5rem;
+    color:rgba(255, 81, 81, 1);
+}
+
+.notifyForHowmanyGoalsCompleted{
+    position: absolute;
+    z-index: 1000;
+    top:0;
+    left:5px;
+    
+}
