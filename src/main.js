@@ -100,7 +100,7 @@ for(let i=0;i<numberOfGoal;i++){
     }
 
     if(markedCircle){//to check & set according to goal was marked or unmarked before closing the page
-        document.querySelector(`.circle${i}`).style.backgroundImage = `url('focus-on-today/assets/tickicon.png')`;
+        document.querySelector(`.circle${i}`).style.backgroundImage = `url('/focus-on-today/assets/tickicon.png')`;
         document.querySelector(`.circle${i}`).parentElement.querySelector(`.goalText`).style.textDecoration=`line-through`;
 
     }
@@ -206,7 +206,7 @@ formTagForGoals.addEventListener(
          
 
         if(!targetedEvent.style.backgroundImage){//will be marked if was unmarked
-        targetedEvent.style.backgroundImage=`url('focus-on-today/assets/tickicon.png')`;
+        targetedEvent.style.backgroundImage=`url('/focus-on-today/assets/tickicon.png')`;
         targetedEvent.parentElement.querySelector(`.goalText`).style.textDecoration=`line-through`;
         localStorage.setItem(`${targetedEvent.classList[1]}-markingStatus`,`marked`);//marking will be also registered into localStorage
         if(localStorage.getItem(`howmanyUponAllCompleted`)){//in local storage it will be set that howmany goals upon all goals are completed(marked)
